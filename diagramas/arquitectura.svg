@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" font-family="Segoe UI, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333"/></marker>
+    <style>
+      .b{stroke:#333;stroke-width:1.3}
+      .t{font-weight:600;font-size:14px}
+      .s{font-size:12px;fill:#333}
+      .z{font-weight:700;font-size:14px}
+      .l{stroke:#333;stroke-width:1.4;fill:none;marker-end:url(#a)}
+      .d{stroke:#a00;stroke-width:1.4;fill:none;stroke-dasharray:6 4;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1000" height="820" fill="#fff"/>
+  <text x="500" y="28" text-anchor="middle" font-size="18" font-weight="700">Arquitectura: nube privada OpenStack en el cuarto de servidores de la clínica</text>
+
+  <!-- Zona clinica -->
+  <rect x="20" y="45" width="760" height="755" fill="#f7fbff" stroke="#0b5394" stroke-width="2" rx="10"/>
+  <text x="34" y="68" class="z" fill="#0b5394">Zona: Clínica Caribe Salud Integral, Barranquilla (los datos clínicos no salen de aquí)</text>
+
+  <!-- Usuarios -->
+  <rect x="40" y="85" width="220" height="70" class="b" fill="#fff" rx="6"/>
+  <text x="150" y="110" text-anchor="middle" class="t">Sistema de historias + escáner</text>
+  <text x="150" y="130" text-anchor="middle" class="s">evento «egreso» → cola de trabajo</text>
+  <text x="150" y="146" text-anchor="middle" class="s">PDF escaneados (20 %)</text>
+
+  <rect x="290" y="85" width="220" height="70" class="b" fill="#fff" rx="6"/>
+  <text x="400" y="110" text-anchor="middle" class="t">6 auditores (LAN)</text>
+  <text x="400" y="130" text-anchor="middle" class="s">bandeja priorizada + firma</text>
+  <text x="400" y="146" text-anchor="middle" class="s">roles y registro de accesos</text>
+
+  <rect x="540" y="85" width="220" height="70" class="b" fill="#fff" rx="6"/>
+  <text x="650" y="110" text-anchor="middle" class="t">Facturación</text>
+  <text x="650" y="130" text-anchor="middle" class="s">radica solo lo firmado</text>
+  <text x="650" y="146" text-anchor="middle" class="s">(acción humana)</text>
+
+  <!-- OpenStack -->
+  <rect x="40" y="185" width="720" height="480" fill="#eef7ee" stroke="#2e7d32" stroke-width="1.6" rx="8"/>
+  <text x="54" y="207" class="z" fill="#2e7d32">OpenStack (Kolla-Ansible) · proyecto «auditoria-ia» · red de inquilino aislada (Neutron)</text>
+
+  <!-- Servidor 1 -->
+  <rect x="60" y="222" width="320" height="200" class="b" fill="#fff" rx="6"/>
+  <text x="220" y="244" text-anchor="middle" class="t">Servidor existente 1 (sin GPU)</text>
+  <text x="220" y="262" text-anchor="middle" class="s">plano de control OpenStack</text>
+  <rect x="75" y="272" width="290" height="42" fill="#f3f3f3" class="b" rx="4"/>
+  <text x="220" y="290" text-anchor="middle" class="s">Keystone · Nova API · Neutron · Glance</text>
+  <text x="220" y="306" text-anchor="middle" class="s">Placement · Horizon · Cinder (LVM)</text>
+  <rect x="75" y="322" width="290" height="88" fill="#fff4e0" class="b" rx="4"/>
+  <text x="220" y="342" text-anchor="middle" class="t">VM orquestador</text>
+  <text x="220" y="360" text-anchor="middle" class="s">cola (Redis) · API interna · regla de contrato</text>
+  <text x="220" y="378" text-anchor="middle" class="s">PostgreSQL: predicciones, evidencias, firmas</text>
+  <text x="220" y="396" text-anchor="middle" class="s">app web de la bandeja del auditor</text>
+
+  <!-- Servidor 2 -->
+  <rect x="400" y="222" width="340" height="200" class="b" fill="#fff" rx="6"/>
+  <text x="570" y="244" text-anchor="middle" class="t">Servidor existente 2 (sin GPU)</text>
+  <text x="570" y="262" text-anchor="middle" class="s">nodo de cómputo Nova (CPU)</text>
+  <rect x="415" y="272" width="310" height="62" fill="#fff4e0" class="b" rx="4"/>
+  <text x="570" y="292" text-anchor="middle" class="t">VMs OCR × 2 (PP-OCR / ONNX)</text>
+  <text x="570" y="310" text-anchor="middle" class="s">≈25.200 páginas/mes; pico ≈1.000 páginas/día</text>
+  <text x="570" y="326" text-anchor="middle" class="s">escalan con más VMs, sin GPU</text>
+  <rect x="415" y="342" width="310" height="68" fill="#f3f3f3" class="b" rx="4"/>
+  <text x="570" y="362" text-anchor="middle" class="t">VM observabilidad y respaldo</text>
+  <text x="570" y="380" text-anchor="middle" class="s">Prometheus + Grafana (tokens, colas, GPU)</text>
+  <text x="570" y="398" text-anchor="middle" class="s">copias cifradas a disco externo semanal</text>
+
+  <!-- Servidor GPU -->
+  <rect x="60" y="440" width="680" height="210" class="b" fill="#fff" rx="6" stroke-width="2"/>
+  <text x="400" y="462" text-anchor="middle" class="t">Servidor nuevo: 1 × NVIDIA L40S 48 GB (nodo de cómputo Nova con PCI passthrough)</text>
+  <text x="400" y="480" text-anchor="middle" class="s">IOMMU activo · vfio-pci · alias PCI en nova.conf · flavor «gpu.l40s» con pci_passthrough:alias=l40s:1</text>
+  <rect x="80" y="492" width="640" height="145" fill="#e6f4ea" class="b" rx="5"/>
+  <text x="400" y="514" text-anchor="middle" class="t">VM «inferencia» (Ubuntu 24.04 + driver NVIDIA + vLLM, API compatible OpenAI solo en red interna)</text>
+  <rect x="100" y="526" width="290" height="96" fill="#fff" class="b" rx="4"/>
+  <text x="245" y="548" text-anchor="middle" class="t">Qwen3-14B-AWQ (INT4)</text>
+  <text x="245" y="568" text-anchor="middle" class="s">modelo pequeño · 100 % de historias</text>
+  <text x="245" y="586" text-anchor="middle" class="s">pesos ≈8,1 GB</text>
+  <text x="245" y="604" text-anchor="middle" class="s">KV FP8 ≈2,4 GB por hospitalización</text>
+  <rect x="410" y="526" width="290" height="96" fill="#fff" class="b" rx="4"/>
+  <text x="555" y="548" text-anchor="middle" class="t">Qwen3.8-27B-AWQ (INT4)</text>
+  <text x="555" y="568" text-anchor="middle" class="s">LLM · 20 % dudosas</text>
+  <text x="555" y="586" text-anchor="middle" class="s">pesos ≈15,3 GB</text>
+  <text x="555" y="604" text-anchor="middle" class="s">contexto ≈1,9 GB por hospitalización</text>
+
+  <!-- flujos internos -->
+  <path d="M150,155 L150,180 L200,180 L200,322" class="l"/>
+  <path d="M400,155 L400,175 L300,175 L300,322" class="l"/>
+  <path d="M365,350 L415,310" class="l"/>
+  <path d="M220,410 L220,526" class="l"/>
+  <path d="M650,155 L650,170 L360,170 L360,322" class="d"/>
+  <text x="520" y="180" class="s" fill="#a00">consulta lo firmado</text>
+
+  <!-- Seguridad -->
+  <rect x="40" y="680" width="720" height="105" fill="#fff" class="b" rx="6"/>
+  <text x="54" y="702" class="t">Controles (Ley 1581 de 2012 · Res. 1995 de 1999 · Res. 839 de 2017)</text>
+  <text x="54" y="722" class="s">• Cifrado en reposo (LUKS) y TLS interno · acceso por roles (Keystone + app) · bitácora inalterable de quién vio qué historia</text>
+  <text x="54" y="740" class="s">• Los modelos no tienen salida a Internet; los pesos se descargan una vez, se verifica su hash y se cargan en Glance</text>
+  <text x="54" y="758" class="s">• El integrador entra por VPN con doble factor, por ventana aprobada y sin permisos sobre la base de historias</text>
+  <text x="54" y="776" class="s">• Base registrada en el RNBD; política de tratamiento actualizada con la finalidad «auditoría previa a la facturación»</text>
+
+  <!-- Externo -->
+  <rect x="800" y="85" width="180" height="120" fill="#fff" stroke="#999" stroke-width="1.3" rx="6"/>
+  <text x="890" y="110" text-anchor="middle" class="t">EPS (6)</text>
+  <text x="890" y="130" text-anchor="middle" class="s">reciben la factura</text>
+  <text x="890" y="146" text-anchor="middle" class="s">radicada por</text>
+  <text x="890" y="162" text-anchor="middle" class="s">Facturación</text>
+  <path d="M760,120 L800,120" class="l"/>
+
+  <rect x="800" y="300" width="180" height="150" fill="#fff" stroke="#999" stroke-width="1.3" rx="6"/>
+  <text x="890" y="324" text-anchor="middle" class="t">ISP único 300 Mbps</text>
+  <text x="890" y="344" text-anchor="middle" class="s">no está en el camino</text>
+  <text x="890" y="360" text-anchor="middle" class="s">crítico: si se cae,</text>
+  <text x="890" y="376" text-anchor="middle" class="s">la priorización sigue</text>
+  <text x="890" y="400" text-anchor="middle" class="s">solo: VPN del integrador,</text>
+  <text x="890" y="416" text-anchor="middle" class="s">actualizaciones</text>
+  <path d="M800,380 L760,380" class="d"/>
+
+  <rect x="800" y="480" width="180" height="120" fill="#fff" stroke="#999" stroke-width="1.3" rx="6"/>
+  <text x="890" y="504" text-anchor="middle" class="t">Integrador (soporte)</text>
+  <text x="890" y="524" text-anchor="middle" class="s">nivel 2-3: OpenStack,</text>
+  <text x="890" y="540" text-anchor="middle" class="s">drivers, vLLM</text>
+  <text x="890" y="560" text-anchor="middle" class="s">TI clínica (3): nivel 1</text>
+  <text x="890" y="576" text-anchor="middle" class="s">y operación diaria</text>
+  <path d="M890,480 L890,450" class="d"/>
+</svg>

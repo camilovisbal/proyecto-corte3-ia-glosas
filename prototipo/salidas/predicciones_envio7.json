@@ -1,0 +1,1502 @@
+[
+ {
+  "historia_id": 1,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 2,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 3,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 4,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 5,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 6,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 7,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 8,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 9,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 10,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 11,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 12,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 13,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 14,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 15,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 16,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 17,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 18,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 19,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 20,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 21,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 22,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 23,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 24,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 25,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 26,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 27,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 28,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 29,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 30,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 31,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 32,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 33,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 34,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 35,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 36,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 37,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 38,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 39,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 40,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 41,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 42,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 43,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 44,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 45,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 46,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 47,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 48,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 49,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 50,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 51,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 52,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 53,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 54,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 55,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 56,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 57,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 58,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 59,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 60,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 61,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 62,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 63,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 64,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 65,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 66,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 67,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 68,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 69,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 70,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 71,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 72,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 73,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 74,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 75,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 76,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 77,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 78,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 79,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 80,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 81,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 82,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 83,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 84,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 85,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 86,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 87,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 88,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 89,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 90,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 91,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 92,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 93,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 94,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 95,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 96,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 97,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 98,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 99,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 100,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 101,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 102,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 103,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 104,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 105,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 106,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 107,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 108,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 109,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 110,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 111,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 112,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 113,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 114,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 115,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 116,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 117,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 118,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 119,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 120,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 121,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 122,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 123,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 124,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 125,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 126,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 127,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 128,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 129,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 130,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 131,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 132,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 133,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 134,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 135,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 136,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 137,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 138,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 139,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 140,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 141,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 142,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 143,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 144,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 145,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 146,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 147,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 148,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 149,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 150,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 151,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 152,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 153,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 154,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 155,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 156,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 157,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 158,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 159,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 160,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 161,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 162,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 163,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 164,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 165,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 166,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 167,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 168,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 169,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 170,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 171,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 172,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 173,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 174,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 175,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 176,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 177,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 178,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 179,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 180,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 181,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 182,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 183,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 184,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 185,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 186,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 187,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 188,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 189,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 190,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 191,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 192,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 193,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 194,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 195,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 196,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 197,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 198,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 199,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 200,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 201,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 202,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 203,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 204,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 205,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 206,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 207,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 208,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 209,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 210,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 211,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 212,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 213,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 214,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 215,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 216,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 217,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 218,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 219,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 220,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 221,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 222,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 223,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 224,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 225,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 226,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 227,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 228,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 229,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 230,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 231,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 232,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 233,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 234,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 235,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 236,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 237,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 238,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 239,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 240,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 241,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 242,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 243,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 244,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 245,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 246,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 247,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 248,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 249,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 250,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 251,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 252,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 253,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 254,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 255,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 256,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 257,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 258,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 259,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 260,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 261,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 262,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 263,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 264,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 265,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 266,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 267,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 268,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 269,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 270,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 271,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 272,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 273,
+  "prioridad": "revisar",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 274,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 275,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 276,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 277,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 278,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 279,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 280,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 281,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 282,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 283,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 284,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 285,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 286,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 287,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 288,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 289,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 290,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 291,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 292,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 293,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 294,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 295,
+  "prioridad": "revisar",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 296,
+  "prioridad": "revisar",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 297,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 298,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 299,
+  "prioridad": "bajo",
+  "causa": null
+ },
+ {
+  "historia_id": 300,
+  "prioridad": "bajo",
+  "causa": null
+ }
+]

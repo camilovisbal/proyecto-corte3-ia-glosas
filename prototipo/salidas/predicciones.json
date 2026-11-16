@@ -1,0 +1,3602 @@
+[
+ {
+  "historia_id": 1,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2899,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 2,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2921,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 3,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 4,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 5,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 6,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3040,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 7,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 8,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 9,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3017,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 10,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2992,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 11,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 12,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9584,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 13,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 14,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3079,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 15,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9683,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 16,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 17,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3039,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 18,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2913,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 19,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3060,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 20,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9693,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 21,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2803,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 22,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 23,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9432,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 24,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3072,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 25,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2997,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 26,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3022,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 27,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 28,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9527,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 29,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 30,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3057,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 31,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9626,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 32,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2958,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 33,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2912,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 34,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2985,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 35,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 9425,
+   "pequeno_out": 12,
+   "llm_in": 568,
+   "llm_out": 42
+  },
+  "modelo": "qwen/qwen3.8-27b",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 36,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3027,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 37,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3026,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 38,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9434,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 39,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3034,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 40,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2910,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 41,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3030,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 42,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3002,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 43,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 44,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 45,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 46,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 47,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 48,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3073,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 49,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2915,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 50,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 51,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 52,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 53,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2931,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 54,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2985,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 55,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3145,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 56,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3112,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 57,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 58,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 59,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3111,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 60,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9563,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 61,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3035,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 62,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9465,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 63,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 64,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2887,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 65,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 66,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2916,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 67,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2961,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 68,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2965,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 69,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2905,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 70,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3843,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 71,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9404,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 72,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3039,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 73,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3007,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 74,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3043,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 75,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2871,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 76,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2986,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 77,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 78,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2957,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 79,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 80,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 81,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2996,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 82,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 83,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2891,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 84,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3051,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 85,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 86,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2833,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 87,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3002,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 88,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2884,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 89,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3111,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 90,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2980,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 91,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2917,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 92,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2977,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 93,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3043,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 94,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9327,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 95,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9484,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 96,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9700,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 97,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2987,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 98,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3032,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 99,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3130,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 100,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 101,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 102,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3819,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 103,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9524,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 104,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3078,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 105,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 106,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 107,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2944,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 108,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2934,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 109,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9551,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 110,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3034,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 111,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2845,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 112,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 113,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3085,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 114,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 115,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 116,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 9746,
+   "pequeno_out": 12,
+   "llm_in": 609,
+   "llm_out": 36
+  },
+  "modelo": "qwen/qwen3.8-27b",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 117,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3078,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 118,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3047,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 119,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2994,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 120,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9521,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 121,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3129,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 122,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 123,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 124,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3006,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 125,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9446,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 126,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3059,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 127,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2947,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 128,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 129,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3071,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 130,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2931,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 131,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2964,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 132,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3028,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 133,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2947,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 134,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9552,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 135,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 136,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3025,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 137,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3086,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 138,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2972,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 139,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 140,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9662,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 141,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9588,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 142,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3733,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 143,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3057,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 144,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2987,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 145,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3017,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 146,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2866,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 147,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 148,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 149,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2996,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 150,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3041,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 151,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 152,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9735,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 153,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3018,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 154,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3046,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 155,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 156,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3027,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 157,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9577,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 158,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2961,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 159,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 160,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9527,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 161,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9460,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 162,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3079,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 163,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3015,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 164,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2973,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 165,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2899,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 166,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 167,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3007,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 168,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9582,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 169,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3035,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 170,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3031,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 171,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 172,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2886,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 173,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3835,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 174,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3037,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 175,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2978,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 176,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9784,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 177,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3873,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 178,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9525,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 179,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9430,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 180,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9592,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 181,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 182,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3107,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 183,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 184,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3134,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 185,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 186,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2926,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 187,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 188,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9795,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 189,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2991,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 190,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3013,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 191,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9372,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 192,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2945,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 193,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 194,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3056,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 195,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9615,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 196,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 197,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9549,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 198,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3795,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 199,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 200,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 201,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9572,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 202,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 203,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 204,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 205,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2880,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 206,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 207,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 208,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3024,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 209,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 210,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 211,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 212,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9891,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 213,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 214,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 215,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3090,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 216,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2994,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 217,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 9682,
+   "pequeno_out": 12,
+   "llm_in": 585,
+   "llm_out": 39
+  },
+  "modelo": "qwen/qwen3.8-27b",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 218,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2964,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 219,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3028,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 220,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9597,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 221,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3100,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 222,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3067,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 223,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3055,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 224,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9740,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 225,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3051,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 226,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 227,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3024,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 228,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9472,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 229,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9583,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 230,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3118,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 231,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9612,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 232,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2993,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 233,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 234,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 235,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 236,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9915,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 237,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3094,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 238,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 239,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3100,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 240,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2989,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 241,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 242,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3047,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 243,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3104,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 244,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 245,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2933,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 246,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3089,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 247,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2884,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 248,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2954,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 249,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 250,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3060,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 251,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9413,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 252,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9574,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 253,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 254,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3013,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 255,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2900,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 256,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2859,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 257,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 258,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 259,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9451,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 260,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 261,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 262,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 263,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9480,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 264,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 9617,
+   "pequeno_out": 12,
+   "llm_in": 606,
+   "llm_out": 42
+  },
+  "modelo": "qwen/qwen3.8-27b",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 265,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9544,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 266,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3081,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 267,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2907,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 268,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 269,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2877,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 270,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3064,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 271,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2940,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 272,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2862,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 273,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 0,
+   "pequeno_out": 0,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "regla-contrato",
+  "causa": "tarifa"
+ },
+ {
+  "historia_id": 274,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2993,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 275,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 276,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3088,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 277,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9632,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 278,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3789,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 279,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9631,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 280,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3050,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 281,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3026,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 282,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 283,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9515,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 284,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 285,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2835,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 286,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2902,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 287,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 2930,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 288,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9478,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 289,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9572,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 290,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9304,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 291,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9705,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 292,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 293,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9507,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 294,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 9789,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 295,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 9531,
+   "pequeno_out": 12,
+   "llm_in": 579,
+   "llm_out": 32
+  },
+  "modelo": "qwen/qwen3.8-27b",
+  "causa": "soporte"
+ },
+ {
+  "historia_id": 296,
+  "prioridad": "revisar",
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": "codigo"
+ },
+ {
+  "historia_id": 297,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3707,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 298,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3080,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 299,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ },
+ {
+  "historia_id": 300,
+  "prioridad": "bajo",
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "modelo": "clasificador-pequeno-local",
+  "causa": null
+ }
+]

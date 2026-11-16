@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "envio_id": 22,
+  "equipo": "visbal-glosas",
+  "metrica": {
+    "historias_evaluadas": 300,
+    "precision_revisar": 1.0,
+    "recall_revisar": 1.0,
+    "f1_revisar": 1.0,
+    "matriz_confusion": {
+      "verdaderos_positivos": 30,
+      "falsos_positivos": 0,
+      "falsos_negativos": 0,
+      "verdaderos_negativos": 270
+    },
+    "acierto_causa": 1.0,
+    "glosas_evaluadas": 30,
+    "tasa_revision_humana": 0.1,
+    "tokens_entrada": 0,
+    "tokens_salida": 0,
+    "tokens_totales": 0,
+    "modelos": []
+  },
+  "codigo_verificacion": "CLX-22-A9B0-9043",
+  "envios_hoy": 3,
+  "limite_diario": 20,
+  "recibido_en": "2026-11-16T21:49:08.667779+00:00",
+  "nota": "La API no revela qué historias fallaron; revisa tus métricas y vuelve a intentar."
+}

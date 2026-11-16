@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "envio_id": 23,
+  "equipo": "visbal-glosas",
+  "metrica": {
+    "historias_evaluadas": 300,
+    "precision_revisar": 1.0,
+    "recall_revisar": 1.0,
+    "f1_revisar": 1.0,
+    "matriz_confusion": {
+      "verdaderos_positivos": 30,
+      "falsos_positivos": 0,
+      "falsos_negativos": 0,
+      "verdaderos_negativos": 270
+    },
+    "acierto_causa": 1.0,
+    "glosas_evaluadas": 30,
+    "tasa_revision_humana": 0.1,
+    "tokens_entrada": 1283405,
+    "tokens_salida": 3695,
+    "tokens_totales": 1287100,
+    "modelos": [
+      "clasificador-pequeno-local",
+      "qwen/qwen3.8-27b",
+      "regla-contrato"
+    ]
+  },
+  "codigo_verificacion": "CLX-23-86D9-ABE4",
+  "envios_hoy": 4,
+  "limite_diario": 20,
+  "recibido_en": "2026-11-16T21:50:12.851077+00:00",
+  "nota": "La API no revela qué historias fallaron; revisa tus métricas y vuelve a intentar."
+}

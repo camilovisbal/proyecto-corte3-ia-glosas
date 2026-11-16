@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>IA privada contra las glosas</title>
+<style>
+  @page { size: Letter; margin: 22mm 20mm 22mm 20mm; }
+  body { font-family: "Times New Roman", Times, serif; font-size: 11.5pt; line-height: 1.42; color: #000; background: #fff; }
+  h1 { font-size: 17pt; margin: 0 0 6pt; }
+  h2 { font-size: 14pt; margin: 20pt 0 6pt; border-bottom: 1px solid #000; padding-bottom: 2pt; page-break-after: avoid; }
+  h3 { font-size: 12pt; margin: 12pt 0 4pt; page-break-after: avoid; }
+  p { margin: 4pt 0 6pt; text-align: justify; }
+  table { border-collapse: collapse; width: 100%; margin: 6pt 0 10pt; font-size: 10pt; page-break-inside: avoid; }
+  th, td { border: 1px solid #000; padding: 3pt 5pt; vertical-align: top; text-align: left; }
+  th { font-weight: bold; }
+  td.n, th.n { text-align: right; white-space: nowrap; }
+  .calc { font-family: Consolas, "Courier New", monospace; font-size: 9.5pt; }
+  figure { margin: 8pt 0 12pt; text-align: center; page-break-inside: avoid; }
+  figure img { max-width: 100%; border: 1px solid #999; }
+  figcaption { font-size: 9.5pt; margin-top: 3pt; }
+  .portada { height: 230mm; display: flex; flex-direction: column; justify-content: center; text-align: center; page-break-after: always; }
+  .portada p { text-align: center; margin: 3pt 0; }
+  .salto { page-break-before: always; }
+  .obs { border: 1px solid #000; padding: 5pt 8pt; margin: 8pt 0; page-break-inside: avoid; }
+  .obs p { margin: 2pt 0; }
+  .nota { font-size: 9.5pt; }
+  ul, ol { margin: 3pt 0 6pt 18pt; padding: 0; }
+  li { margin: 1pt 0; }
+  code { font-family: Consolas, "Courier New", monospace; font-size: 9.5pt; }
+</style>
+</head>
+<body>
+
+<section class="portada">
+  <p style="font-size:12pt">Universidad de la Costa (CUC) · Ingeniería de Sistemas</p>
+  <p style="font-size:12pt">Arquitectura en la Nube · Periodo 2026-2 · Proyecto de Aula, tercer corte (Unidad 3)</p>
+  <p>&nbsp;</p>
+  <h1 style="font-size:22pt">IA privada contra las glosas</h1>
+  <p style="font-size:14pt">Plataforma para priorizar las historias con riesgo de glosa antes de facturar<br>Clínica Caribe Salud Integral (empresa ficticia)</p>
+  <p>&nbsp;</p>
+  <p style="font-size:13pt"><b>Camilo Andrés Visbal Beltrán</b></p>
+  <p>C.C. 1042247877</p>
+  <p>Trabajo individual</p>
+  <p>Equipo registrado en la API de la clínica: <b>visbal-glosas</b> (equipo_id 7)</p>
+  <p>&nbsp;</p>
+  <p>Docente: Ing. Rodolfo Cañas Cervantes</p>
+  <p>Barranquilla, noviembre de 2026</p>
+</section>
+
+<h2>Resumen</h2>
+<p>La clínica pierde en definitiva el 4 % de lo que factura, COP 720,0 millones al mes. De esa pérdida, la parte que una IA puede ayudar a evitar es la de código diagnóstico y soporte documental (75 %): COP 540,0 millones al mes. Se propone una plataforma privada en la propia clínica (OpenStack con una GPU NVIDIA L40S por paso directo a la máquina virtual):</p>
+<ul>
+  <li>OCR para las historias escaneadas.</li>
+  <li>Una regla determinista contra el contrato de cada EPS.</li>
+  <li>Un modelo pequeño (Qwen3-14B) que clasifica el 100 % de las historias.</li>
+  <li>Un modelo grande (Qwen3.8-27B) solo para el 20 % dudoso.</li>
+  <li>Al final, el auditor firma cada decisión.</li>
+</ul>
+<p>La plataforma procesa 154,96 M tokens de entrada y 1,95 M de salida al mes. La dimensiona el pico de fin de mes, que es ×3,6 frente al día promedio. Cuesta COP 12,1 millones al mes con soporte externo incluido, más una inversión inicial de COP 112,1 millones. Con los supuestos del escenario base se recupera en 0,5 meses, y en 1,1 meses si la IA acierta la mitad. El prototipo, con las 300 historias de la API, logró un F1 de «revisar» de <b>1.0</b> (código de verificación <b>CLX-23-86D9-ABE4</b>).</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 0 — Análisis propio de los datos</h2>
+<p>Las observaciones se hicieron antes de elegir modelo o GPU, con los datos de la sección 2 del enunciado y con la muestra de 300 historias de la API. Cada una indica el dato exacto, la consecuencia y la decisión de diseño que cambia; entre paréntesis va la mirada que cubre.</p>
+
+<div class="obs">
+<p><b>O1. Los auditores «dan abasto» en número de historias, pero no en palabras</b> (qué no cuadra)</p>
+<p><b>Dato:</b> 6 auditores × 120 historias/día = 720 historias/día. Con 22 días hábiles son 15.840 al mes, más que las 15.000 atenciones. Pero el volumen es de 63.000.000 palabras/mes (12.000 × 1.500 + 3.000 × 15.000). Eso da 477.273 palabras por auditor y por día, es decir 31,8 horas de lectura a 250 palabras por minuto. Una sola hospitalización toma 60 minutos de lectura.</p>
+<p><b>Consecuencia:</b> la cifra de 120 historias/día solo es posible si las hospitalizaciones casi no se leen. Sin embargo, son el 20 % de las historias, el 71,4 % del texto y las de mayor valor. El problema no es contar historias sino leerlas.</p>
+<p><b>Decisión:</b> la plataforma no entrega solo una etiqueta. Entrega la causa probable y la cita del fragmento que la sustenta, para que el auditor lea un párrafo y no 15.000 palabras. La bandeja se ordena por valor × riesgo, no por orden de llegada. Por eso la salida del modelo grande se presupuesta en 350 tokens (Cap. 2).</p>
+</div>
+
+<div class="obs">
+<p><b>O2. El pico de fin de mes multiplica la carga por 3,6 y desborda a los auditores 2,5 veces</b> (pico de fin de mes)</p>
+<p><b>Dato:</b> el 60 % de la facturación se radica en los últimos 5 días. Si las historias siguen la misma proporción, son 9.000 historias en 5 días, 1.800 por día. El día promedio tiene 500 (15.000 / 30): ×3,6. Frente a la capacidad de 720/día, es ×2,5. En tokens, el día pico trae 18,59 M de entrada y 0,23 M de salida; el día promedio, 5,17 M y 0,07 M. La muestra de la API lo confirma: 180 de las 300 historias (60 %) se radicaron entre el 27 y el 31 de octubre de 2026.</p>
+<p><b>Consecuencia:</b> una plataforma dimensionada para el promedio se atasca justo cuando más dinero está en juego.</p>
+<p><b>Decisión:</b> (1) Cada historia se procesa cuando se cierra la atención (egreso), no cuando se radica. Así, en los últimos 5 días la historia ya llega clasificada y el pico se vuelve una cola de firmas. (2) Aun así, el hardware se dimensiona para el pico: 1,4 horas de GPU en el día pico (Cap. 3). (3) Los auditores solo revisan completo el 15 % más la muestra de control: 360 historias/día en el pico, por debajo de 720.</p>
+</div>
+
+<div class="obs">
+<p><b>O3. Las causas de glosa no dicen sobre qué base están medidas, y una de ellas no está en la historia</b> (qué no cuadra)</p>
+<p><b>Dato:</b> «45 % código CIE-10, 30 % falta de soporte, 25 % tarifas o contratos». El enunciado no dice si son porcentajes de la glosa inicial (10 %) o de la definitiva (4 %), ni si se miden en número de facturas o en pesos. Además, la tarifa no aparece en la historia: la API la entrega aparte (<code>GET /api/clinica/tarifas</code>), y en la muestra 8 de 300 facturas no coinciden con el contrato.</p>
+<p><b>Consecuencia:</b> si el ahorro se calcula sobre la glosa inicial (1.800 millones) se infla 2,5 veces. Y un LLM no puede saber una tarifa que no lee.</p>
+<p><b>Decisión:</b> el ROI (Cap. 5) se calcula solo sobre la pérdida definitiva, que es la base más conservadora: 720 millones × (45 % + 30 %) = COP 540,0 millones/mes. Las tarifas se resuelven con una regla determinista contra la tabla del contrato, sin tokens, y su ahorro no se suma al de la IA.</p>
+</div>
+
+<div class="obs">
+<p><b>O4. La IA detecta la falta de un soporte, pero no lo puede producir</b> (lo que la IA no puede resolver)</p>
+<p><b>Dato:</b> el 30 % de las causas es falta de soporte documental. En la muestra, frases como «se indica electrocardiograma; al cierre de la historia no se anexa resultado ni autorización».</p>
+<p><b>Consecuencia:</b> aunque el modelo acierte, el soporte (orden, resultado, autorización de la EPS) lo tiene que conseguir una persona, y a veces no existe. La IA tampoco firma, no responde ante la EPS y no interpreta un contrato. Esas son responsabilidades del auditor (la gerente: «no quiero que una máquina facture por mí»).</p>
+<p><b>Decisión:</b> la salida es «revisar + causa + evidencia», nunca un código corregido ni una factura. El auditor firma el 100 % de las decisiones. El ROI incluye un factor de corrección: solo el 70 % de lo detectado se alcanza a corregir antes de radicar. Si el OCR sale ilegible, la historia va directo al auditor sin pasar por la IA.</p>
+</div>
+
+<div class="obs">
+<p><b>O5. La nube pública implica sacar historias clínicas del país por un único enlace a Internet</b> (riesgo legal y operativo)</p>
+<p><b>Dato:</b> la historia clínica tiene reserva legal (Res. 1995 de 1999) y es dato sensible (Ley 1581 de 2012, art. 5). AWS no tiene región en Colombia: la zona local de Bogotá está anunciada, pero a la fecha de consulta (16-nov-2026) no se encontró confirmación de que esté disponible. La clínica tiene un solo proveedor de Internet de 300 Mbps.</p>
+<p><b>Consecuencia:</b> el ancho de banda no es el problema, porque el texto de un mes ocupa pocos gigabytes. El problema es la disponibilidad: un corte del único enlace durante los 5 días del pico detiene la priorización si la inferencia está afuera. Además, toda historia procesada en AWS es una transmisión internacional de datos sensibles.</p>
+<p><b>Decisión:</b> la ruta elegida es la nube privada OpenStack en la clínica (Cap. 4). El camino crítico no depende del enlace ni de una transferencia internacional; Internet queda solo para el soporte remoto y las actualizaciones.</p>
+</div>
+
+<div class="obs">
+<p><b>O6. TI son tres personas sin experiencia en IA, y los dos servidores no tienen GPU</b> (riesgo de capacidad de TI y de costo)</p>
+<p><b>Dato:</b> 2 servidores sin GPU y un equipo de TI de 3 personas sin experiencia en IA. El OCR del prototipo tardó en promedio 143 s por historia escaneada en un portátil de 2 núcleos (Celeron N4020). La clínica tiene ≈25.200 páginas escaneadas al mes (Cap. 1) y ≈3.000 en el día pico.</p>
+<p><b>Consecuencia:</b> operar OpenStack, controladores de GPU y un servidor de inferencia es un oficio nuevo para ese equipo. Si se cae, nadie lo levanta en el pico. El OCR, en cambio, sí puede correr en CPU.</p>
+<p><b>Decisión:</b> (1) Contrato de soporte con un integrador (nivel 2-3), con costo explícito de COP 10 millones/mes, incluido en el costo y en el ROI. (2) Una sola GPU y una sola máquina virtual de inferencia, instaladas con Kolla-Ansible. (3) Los servidores existentes se reutilizan para el plano de control y para el OCR, no para la IA. (4) TI de la clínica asume el nivel 1 con un manual de operación.</p>
+</div>
+
+<div class="obs">
+<p><b>O7. La muestra de la API no tiene el tamaño del caso, y la hospitalización real llena la ventana de contexto</b> (qué no cuadra)</p>
+<p><b>Dato:</b> en la API las hospitalizaciones tienen ≈5.037 palabras (medido); el caso dice ≈15.000. Con el tokenizador del modelo pequeño (Qwen3-14B), una hospitalización real son 15.000 × 1,900 = 28.500 tokens; con el del modelo grande (Qwen3.8-27B), 15.000 × 1,723 = 25.845. Con instrucciones y respuesta llega a 29.160 tokens en el modelo pequeño.</p>
+<p><b>Consecuencia:</b> (1) Los tokens del prototipo no se pueden comparar directamente con el Cap. 2 y hay que escalarlos. (2) Muchos modelos pequeños tienen ventanas de 8.000 tokens y no leerían una hospitalización completa. (3) En un modelo denso de 64 capas como Qwen3-32B, la memoria de contexto (KV) de una sola hospitalización sería de ≈7,6 GB en FP16, y en una L40S apenas cabría una a la vez.</p>
+<p><b>Decisión:</b> se eligen modelos con ventana suficiente (Qwen3-14B: 40.960 tokens; Qwen3.8-27B: 262.144). Como LLM se prefiere Qwen3.8-27B, de atención híbrida: solo 16 de sus 64 capas guardan caché KV y la hospitalización le ocupa 1,93 GB. La memoria se dimensiona con la hospitalización del caso, no con la de la muestra.</p>
+</div>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 1 — Flujo del sistema</h2>
+<figure>
+  <img src="../diagramas/flujo.png" alt="Diagrama de flujo">
+  <figcaption>Figura 1. Flujo propuesto con OCR y el porcentaje de historias que pasa por cada etapa (diagrama propio).</figcaption>
+</figure>
+<h3>Etapas y criterio de reparto</h3>
+<table>
+<tr><th>Etapa</th><th class="n">% / historias-mes</th><th>Qué hace</th><th>Criterio</th></tr>
+<tr><td>0. Ingesta al egreso</td><td class="n">100 % · 15.000</td><td>El cierre de la atención pone la historia en la cola.</td><td>O2: se adelanta el trabajo al pico de radicación.</td></tr>
+<tr><td>1. OCR</td><td class="n">20 % · 3.000</td><td>PP-OCR en CPU (servidores existentes). Valida los CIE-10 leídos contra el catálogo.</td><td>Solo PDF escaneado (dato de la sección 2). Con confianza baja → auditor directo.</td></tr>
+<tr><td>2a. Normalización y regla de contrato</td><td class="n">100 % · 0 tokens</td><td>Corta la historia por secciones y compara el valor facturado con la tarifa de la EPS.</td><td>O3: la tarifa no está en la historia y una regla es exacta y gratuita.</td></tr>
+<tr><td>2b. Modelo pequeño Qwen3-14B</td><td class="n">100 % · 15.000</td><td>Lee la historia completa y devuelve bajo/revisar, causa y confianza.</td><td>Confianza ≥ 0,8 → decide. Banda gris 0,2–0,8 → LLM.</td></tr>
+<tr><td>3. LLM Qwen3.8-27B</td><td class="n">20 % · 3.000</td><td>Revisa las dudosas y las hospitalizaciones marcadas, y cita la evidencia.</td><td>Banda gris (≈10 %) + hospitalizaciones en riesgo (≈10 %): el LLM se reserva para donde la cita le ahorra más lectura al auditor (O1).</td></tr>
+<tr><td>4. Auditor</td><td class="n">100 % firma · 15 % revisión completa</td><td>Corrige el código o pide el soporte, y firma. Revisa completa una muestra de 750 «bajo».</td><td>La IA no factura ni decide. La muestra mide los falsos negativos.</td></tr>
+</table>
+<p>Los porcentajes salen de dos anclas. Primera: el 10 % de glosa inicial del caso, confirmado en la muestra de la API, donde 30 de 300 historias (≈10 %) tienen una inconsistencia detectable. Segunda: un margen de falsos positivos que se acepta a propósito. Una historia marcada de más le cuesta al auditor minutos; una glosa no detectada le cuesta a la clínica el valor de la factura. Por eso el sistema marca el 15 % (8 % directo + 7 % desde el LLM) para un riesgo real cercano al 10 %.</p>
+<p><b>Razonamiento extendido: no se usa.</b> La tarea es comparar el código facturado con el cuadro descrito y verificar que cada cargo tenga soporte. Es extracción y contraste, con la evidencia en el texto, no un problema de varios pasos. El razonamiento extendido multiplicaría los tokens de salida (cientos a miles por historia, frente a 350) y la latencia en el pico, sin evidencia de que mejore la decisión, que de todos modos firma un humano. En los modelos Qwen se desactiva explícitamente (modo sin pensamiento).</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 2 — Tokens y costo</h2>
+<h3>2.1 Impuesto de tokenización del español (medido)</h3>
+<p>Cada modelo se mide con su propio tokenizador oficial (<code>tokenizer.json</code> de huggingface.co/Qwen, descargado el 16-nov-2026 y usado con la librería <code>tokenizers</code>): <b>Qwen3-14B</b> (vocabulario de 151.936, idéntico al de toda la familia Qwen3) y <b>Qwen3.8-27B</b> (vocabulario de 248.320). Script: <code>medir_tokens.py</code>; las palabras se cuentan con la misma expresión regular en todos los casos.</p>
+<table>
+<tr><th>Medición</th><th class="n">Palabras</th><th class="n">Qwen3-14B tokens/palabra</th><th class="n">Qwen3.8-27B tokens/palabra</th></tr>
+<tr><td>12 frases clínicas en español (corpus paralelo propio)</td><td class="n">232</td><td class="n">1,832</td><td class="n">1,591</td></tr>
+<tr><td>Las mismas 12 frases en inglés</td><td class="n">220</td><td class="n">1,373</td><td class="n">1,368</td></tr>
+<tr><td><b>Impuesto del español</b> (tokens ES / tokens EN, mismo contenido)</td><td></td><td class="n"><b>×1,41</b></td><td class="n"><b>×1,23</b></td></tr>
+<tr><td>180 historias cortas reales de la API</td><td class="n">276.242</td><td class="n"><b>1,985</b></td><td class="n"><b>1,811</b></td></tr>
+<tr><td>60 hospitalizaciones reales de la API</td><td class="n">302.232</td><td class="n"><b>1,900</b></td><td class="n"><b>1,723</b></td></tr>
+</table>
+<p>Para los cálculos se usa la tasa medida sobre las historias de la clínica, no la del corpus paralelo, que es más baja porque la historia real trae códigos, cifras y unidades («134/89 mmHg», «INR 1,0»). El vocabulario más grande de Qwen3.8 reduce el impuesto del español de ×1,41 a ×1,23: el mismo texto le cuesta un 9 % menos de tokens. Si el contenido del mes estuviera en inglés, el modelo pequeño leería 90,86 M tokens en lugar de 121,23 M.</p>
+
+<h3>2.2 Tokens al mes, separados por modelo, entrada y salida</h3>
+<table>
+<tr><th>Concepto</th><th>Cálculo</th><th class="n">Resultado</th></tr>
+<tr><td>Tokens de una historia corta</td><td class="calc">1.500 palabras × 1,985</td><td class="n">2.978</td></tr>
+<tr><td>Tokens de una hospitalización</td><td class="calc">15.000 palabras × 1,900</td><td class="n">28.500</td></tr>
+<tr><td>Texto de historias al mes</td><td class="calc">12.000 × 2.978 + 3.000 × 28.500</td><td class="n">121,23 M</td></tr>
+<tr><td>Modelo pequeño · entrada</td><td class="calc">texto del mes + 15.000 × 600 (instrucciones)</td><td class="n">130,23 M</td></tr>
+<tr><td>Modelo pequeño · salida</td><td class="calc">15.000 × 60 tokens (JSON: etiqueta, causa, confianza)</td><td class="n">0,90 M</td></tr>
+<tr><td>Texto del mes con el tokenizador del LLM</td><td class="calc">12.000 × 1.500 × 1,811 + 3.000 × 15.000 × 1,723</td><td class="n">110,13 M</td></tr>
+<tr><td>LLM · entrada</td><td class="calc">20 % × 110,13 M + 3.000 × 900</td><td class="n">24,73 M</td></tr>
+<tr><td>LLM · salida</td><td class="calc">3.000 × 350 tokens (decisión + cita, sin razonamiento extendido)</td><td class="n">1,05 M</td></tr>
+<tr><td><b>Total entrada / mes</b></td><td class="calc">pequeño + LLM (cada uno con su tokenizador)</td><td class="n"><b>154,96 M</b></td></tr>
+<tr><td><b>Total salida / mes</b></td><td class="calc">pequeño + LLM</td><td class="n"><b>1,95 M</b></td></tr>
+</table>
+<p class="nota">Supuestos: 600 y 900 tokens de instrucciones por llamada, 60 y 350 de salida, y el LLM recibe historias en la misma proporción corta/hospitalización. El prototipo (Cap. 6) usó llamadas más cortas porque solo envía al LLM las secciones relevantes.</p>
+
+<h3>2.3 Promedio y pico: cuál dimensiona</h3>
+<table>
+<tr><th>Escenario</th><th>Cálculo</th><th class="n">Historias/día</th><th class="n">Entrada/día</th><th class="n">Salida/día</th><th class="n">Entrada tokens/s (24 h)</th></tr>
+<tr><td>Día promedio</td><td class="calc">total / 30</td><td class="n">500</td><td class="n">5,17 M</td><td class="n">0,07 M</td><td class="n">60</td></tr>
+<tr><td><b>Día pico</b></td><td class="calc">total × 0,60 / 5</td><td class="n">1.800</td><td class="n">18,59 M</td><td class="n">0,23 M</td><td class="n">215</td></tr>
+</table>
+<p><b>Lo que dimensiona la plataforma es el pico</b> (×3,6): la GPU debe procesar 18,59 M de entrada en un día. Aun si la ingesta al egreso (O2) aplana parte de la carga, la radicación del pico exige tener todo clasificado ese día. El promedio sirve para el costo por uso de una API, que cobra por token y no por capacidad.</p>
+
+<h3>2.4 API comercial vs. GPU propia o alquilada, con el mismo volumen</h3>
+<table>
+<tr><th>Opción</th><th>Cálculo (volumen de 2.2)</th><th class="n">USD/mes</th><th class="n">COP/mes</th></tr>
+<tr><td>API: Qwen3-14B + Qwen3.8-27B en OpenRouter</td><td class="calc">peq: 130,23 M×0,12 + 0,90 M×0,24; LLM: 24,73 M×0,15 + 1,05 M×1,875 (USD por millón)</td><td class="n">21,52</td><td class="n">COP 71.020</td></tr>
+<tr><td>API: Claude Haiku 5.5 + Sonnet 5.5 en Amazon Bedrock</td><td class="calc">peq: ×0,10 / ×0,50; LLM: ×2,00 / ×10,00</td><td class="n">73,43</td><td class="n">COP 242.306</td></tr>
+<tr><td>GPU alquilada: AWS g6e.xlarge (1 × L40S 48 GB) 24/7</td><td class="calc">1,861 USD/h × 730 h</td><td class="n">1.358,53</td><td class="n">COP 4.483.149</td></tr>
+<tr><td>GPU propia: servidor con 1 × L40S (Cap. 3 y 4)</td><td class="calc">amortización COP 1.448.242 + energía COP 657.000 + soporte del integrador COP 10,0 millones</td><td class="n">—</td><td class="n"><b>COP 12,1 millones</b></td></tr>
+</table>
+<p>Inversión de la GPU propia: L40S USD 6.799 + servidor base USD 9.000 (supuesto) = USD 15.799 = COP 52,1 millones, amortizada en 36 meses. Energía: 0,9 kW × 730 h × COP 1.000/kWh (supuesto). TRM: COP 3.300/USD.</p>
+<p><b>Lectura honesta:</b> con este volumen, la API es mucho más barata. Para que la GPU propia (sin el soporte) iguale a la API de Qwen se necesitarían 4.651 M tokens al mes, unas 30 veces el volumen actual. Si el único criterio fuera el costo, la respuesta sería la API. El Capítulo 4 explica por qué se paga la diferencia (COP 12,0 millones al mes, el 5,6 % del ahorro neto del escenario base): ley, dependencia del enlace y capacidad de TI. La comparación se hizo con el mismo volumen de tokens para todas las opciones.</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 3 — Hardware y cuantización</h2>
+<h3>3.1 Memoria de cada modelo</h3>
+<p>Arquitectura tomada de los <code>config.json</code> oficiales (16-nov-2026). Qwen3-14B: 40 capas de atención completa, 8 cabezas KV, dimensión 128. Qwen3.8-27B: 64 capas, de las que solo 16 (una de cada cuatro) son de atención completa con 4 cabezas KV de dimensión 256; las otras 48 son de atención lineal y guardan un estado fijo por historia (48 capas × 48 cabezas × 128 × 128 × 4 bytes = 0,15 GB), sin importar su longitud. Pesos = parámetros × bytes por parámetro; en INT8/INT4 se suma un 10 % por escalas y capas sin cuantizar. KV por token = 2 (K y V) × capas con atención completa × cabezas KV × dimensión × 2 bytes (FP16).</p>
+<table>
+<tr><th>Modelo</th><th class="n">BF16</th><th class="n">INT8/FP8</th><th class="n">INT4 (AWQ)</th><th class="n">KV por token (FP16)</th><th class="n">Contexto de una hospitalización</th></tr>
+<tr><td>Qwen3-14B (14,8 B)</td><td class="n">29,6 GB</td><td class="n">16,3 GB</td><td class="n">8,1 GB</td><td class="n calc">2×40×8×128×2 = 163.840 B</td><td class="n">29.160 tokens: 4,78 GB (FP8: 2,39 GB)</td></tr>
+<tr><td>Qwen3.8-27B (27,8 B)</td><td class="n">55,6 GB</td><td class="n">30,6 GB</td><td class="n">15,3 GB</td><td class="n calc">2×16×4×256×2 = 65.536 B</td><td class="n">27.095 tokens: 1,93 GB (FP8: 1,04 GB), estado lineal incluido</td></tr>
+</table>
+<p><b>Presupuesto en una L40S de 48 GB:</b> pesos INT4 de ambos = 23,4 GB; reserva del 10 % para activaciones y fragmentación = 4,8 GB; quedan 19,8 GB para KV, repartidos mitad y mitad. Con la caché KV en FP16 caben 5,1 hospitalizaciones simultáneas en el LLM y 2,1 en el modelo pequeño; con KV en FP8, 9,5 y 4,1 (las historias cortas ocupan 10 veces menos). Se usa KV FP8 en el modelo pequeño, que lee el 100 % de las historias y es el que más contexto acumula en el pico.</p>
+<p><b>Rendimiento suficiente:</b> en la lectura del prompt (prefill) se gastan unos 2 FLOP por parámetro y por token. La L40S entrega 362 TFLOPS densos en FP16 (hoja de datos de NVIDIA); con una utilización efectiva supuesta del 35 %, son ≈4.280 tokens/s en el 14B y ≈2.279 en el 27B. El día pico pide 1,4 horas de GPU, holgado dentro de 24 h, de modo que una sola tarjeta basta y queda margen para crecer.</p>
+
+<h3>3.2 Cuantización elegida: INT4 (AWQ) en los pesos de ambos modelos, FP8 en la caché KV del modelo pequeño</h3>
+<p>Al bajar de 16 a 4 bits cada peso se representa con 16 niveles en lugar de 65.536. Se pierde precisión fina y la pérdida se nota en razonamientos largos de varios pasos y en textos generados extensos. AWQ protege el ≈1 % de canales más importantes y retiene más del 99 % de la exactitud en MMLU frente a FP16 (Lin et al., MLSys 2024, material S15). Es aceptable para auditar por tres razones: (1) la tarea es clasificar y citar un fragmento que ya está en el texto, no crear contenido; (2) cada decisión la firma un auditor y la muestra de control de 750 «bajo» al mes mide si la calidad cae; (3) la alternativa de mayor precisión casi no deja memoria: el LLM en FP8 oficial (Qwen/Qwen3.8-27B-FP8, 30,6 GB) más el 14B en INT4 (8,1 GB) dejan solo 4,5 GB para contexto, menos de dos hospitalizaciones a la vez entre los dos modelos. Si la muestra de control mostrara más falsos negativos, la primera palanca sería subir el 14B a INT8 (16,3 GB), que sí cabe.</p>
+
+<h3>3.3 GPU elegida y los dos servidores existentes</h3>
+<table>
+<tr><th>Opción</th><th>Memoria</th><th>Veredicto</th></tr>
+<tr><td>NVIDIA L4 (AWS g6.xlarge)</td><td>24 GB</td><td>No alcanza: 23,4 GB solo de pesos INT4 para los dos modelos, sin espacio para el contexto.</td></tr>
+<tr><td><b>NVIDIA L40S</b> (AWS g6e.xlarge)</td><td>48 GB GDDR6</td><td><b>Elegida.</b> Los dos modelos en INT4 + KV FP8 en una tarjeta PCIe pasiva para servidor. USD 6.799 nueva (gpudojo, 16-nov-2026).</td></tr>
+<tr><td>NVIDIA A100 80 GB / H100 80 GB</td><td>80 GB HBM</td><td>Sobredimensionada para 1,4 h de GPU en el día pico; varias veces el precio.</td></tr>
+</table>
+<p><b>¿Sirven los 2 servidores existentes?</b> Para la IA, no. No tienen GPU, y una L40S pasiva de 350 W necesita un chasis certificado con el flujo de aire, la fuente y la ranura PCIe x16 de doble ancho adecuados (supuesto: no se conoce el modelo exacto, verificarlo antes de comprar). En CPU, un modelo de 14B tardaría varias veces más que las 24 horas del día pico. Sí sirven para todo lo demás: el plano de control de OpenStack, el orquestador, la base de datos y el OCR, que corre bien en CPU (O6). Se compra un servidor nuevo certificado para GPU.</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 4 — Despliegue y ley</h2>
+<p><b>Decisión: nube privada OpenStack en la clínica, con la GPU por paso directo (PCI passthrough) a la máquina virtual de inferencia.</b></p>
+<figure>
+  <img src="../diagramas/arquitectura.png" alt="Diagrama de arquitectura">
+  <figcaption>Figura 2. Arquitectura propuesta (diagrama propio).</figcaption>
+</figure>
+<h3>4.1 Justificación en los tres ejes</h3>
+<table>
+<tr><th>Eje</th><th>OpenStack en la clínica (elegida)</th><th>AWS (descartada)</th></tr>
+<tr><td>Costo</td><td>COP 12,1 millones/mes con soporte + inversión de COP 112,1 millones. Es más caro, pero equivale al 5,6 % del ahorro neto base y se recupera en 0,5 meses.</td><td>Bedrock: COP 242.306/mes; GPU g6e 24/7: COP 4.483.149/mes. Más barato, pero exige un segundo ISP y asesoría legal para la transmisión internacional (no cuantificados).</td></tr>
+<tr><td>Operación</td><td>Más difícil: 3 personas sin IA. Se mitiga con un integrador (nivel 2-3), una sola GPU y una sola VM, Kolla-Ansible y un manual de operación. Si cae Internet, la priorización sigue.</td><td>Más simple de operar (servicio gestionado). Pero el camino crítico depende de un único enlace de 300 Mbps justo en los 5 días del pico (O5).</td></tr>
+<tr><td>Ley</td><td>Los datos no salen de Colombia ni de la custodia del prestador (Res. 1995 de 1999 y Res. 839 de 2017). No hay transferencia ni transmisión internacional.</td><td>No hay región de AWS en Colombia: cada historia sería una transmisión internacional de datos sensibles. Es posible a EE. UU., pero necesita contrato de transmisión, autorización y una evaluación de proporcionalidad difícil de defender cuando existe una alternativa local.</td></tr>
+</table>
+
+<h3>4.2 Postura legal: requisitos ante la SIC que aplican y supuestos</h3>
+<p><b>Aplican con la ruta elegida:</b></p>
+<ol>
+  <li><b>Ley 1581 de 2012, art. 5 y 6:</b> la historia es dato sensible. Su tratamiento requiere autorización explícita del titular, o una excepción legal, y una finalidad informada. <i>Supuesto:</i> la autorización que el paciente firma al ingreso cubre «facturación y auditoría de cuentas». Se actualiza la política de tratamiento para declarar el uso de herramientas automatizadas en la auditoría previa a la facturación.</li>
+  <li><b>Registro Nacional de Bases de Datos (RNBD) ante la SIC</b> (Decreto 1074 de 2015): se actualiza el registro de la base de historias, indicando la nueva finalidad y que la base no se transfiere fuera del país.</li>
+  <li><b>Circular Externa 002 de 2024 de la SIC</b> (21-ago-2024), sobre datos personales en sistemas de IA: tratamiento idóneo, necesario, razonable y proporcional; gestión de riesgos; privacidad desde el diseño y evaluación de impacto. Con esta ruta: modelos sin salida a Internet, mínimo privilegio, bitácora de accesos, evaluación de impacto antes de producción y revisión humana del 100 % de las decisiones.</li>
+  <li><b>Resolución 1995 de 1999 y Resolución 839 de 2017</b> (Ministerio de Salud): reserva y custodia de la historia. La clínica sigue siendo la custodia; el auditor que consulta forma parte del equipo autorizado.</li>
+</ol>
+<p><b>No aplican con esta ruta (sí con AWS):</b> la transferencia o transmisión internacional (Ley 1581, art. 26; Circular Externa 005 de 2017 de la SIC, que incluye a EE. UU. entre los países con nivel adecuado; contrato de transmisión con AWS como encargado). Habrían sido obligatorias al elegir cualquier región de AWS.</p>
+<p><b>Supuesto declarado:</b> el integrador de soporte accede a la infraestructura, no a los datos. Si en algún caso tuviera que ver historias, sería un encargado del tratamiento y necesitaría un contrato de transmisión nacional con cláusulas de confidencialidad. Este documento no reemplaza la revisión del área jurídica de la clínica.</p>
+
+<h3>4.3 Quién opera la plataforma</h3>
+<table>
+<tr><th>Tarea</th><th>TI de la clínica (3)</th><th>Integrador</th><th>Auditores</th></tr>
+<tr><td>Instalación de OpenStack, GPU passthrough y vLLM</td><td>acompaña</td><td><b>responsable</b></td><td>—</td></tr>
+<tr><td>Operación diaria: colas, respaldos, usuarios, tablero</td><td><b>responsable</b> (manual de operación)</td><td>escalamiento</td><td>—</td></tr>
+<tr><td>Actualizaciones de OpenStack, controladores y modelos</td><td>aprueba la ventana</td><td><b>responsable</b></td><td>—</td></tr>
+<tr><td>Umbrales y muestra de control</td><td>ejecuta</td><td>asesora</td><td><b>responsables</b> (miden falsos negativos)</td></tr>
+<tr><td>Firma de cada decisión</td><td>—</td><td>—</td><td><b>responsables</b></td></tr>
+</table>
+<p>Configuración clave del passthrough: IOMMU activo en el BIOS y en el kernel; la L40S ligada a <code>vfio-pci</code>; <code>[pci] alias</code> y <code>device_spec</code> en <code>nova.conf</code>; filtro <code>PciPassthroughFilter</code> en el planificador, y un flavor con <code>pci_passthrough:alias=l40s:1</code> (temas de S12–S13).</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 5 — Retorno de la inversión</h2>
+<h3>5.1 Pérdida atacable (acotada)</h3>
+<table>
+<tr><th>Concepto</th><th>Cálculo</th><th class="n">COP/mes</th></tr>
+<tr><td>Glosa inicial (no es la base del ROI)</td><td class="calc">18.000 M × 10 %</td><td class="n">COP 1.800,0 millones</td></tr>
+<tr><td>Pérdida definitiva</td><td class="calc">18.000 M × 4 %</td><td class="n">COP 720,0 millones</td></tr>
+<tr><td>(−) Tarifas o contratos: regla, no IA</td><td class="calc">COP 720,0 millones × 25 %</td><td class="n">COP 180,0 millones</td></tr>
+<tr><td><b>Pérdida atacable por la IA</b></td><td class="calc">COP 720,0 millones × (45 % + 30 %)</td><td class="n"><b>COP 540,0 millones</b></td></tr>
+</table>
+<h3>5.2 Supuestos explícitos</h3>
+<ul>
+  <li><b>Detección:</b> en el escenario base la IA detecta el 60 % de los errores de código y de soporte. Es deliberadamente menor que el recall del prototipo (1.0), porque la muestra es ficticia y más ordenada que una historia real.</li>
+  <li><b>Corrección:</b> de lo detectado, el auditor alcanza a corregir el 70 % antes de radicar. El resto no tiene soporte que conseguir o el error no se puede corregir (O4).</li>
+  <li><b>Pesimista:</b> la IA detecta la mitad (30 %), con el mismo factor de corrección.</li>
+  <li><b>Costo:</b> el mismo del Cap. 2: COP 12,1 millones/mes. Inversión inicial: equipo COP 52,1 millones + implementación y capacitación por el integrador COP 60 M (supuesto) = COP 112,1 millones.</li>
+  <li><b>No se cuenta como ahorro:</b> el costo de los auditores (COP 36,0 millones/mes), que se mantienen todos; las tarifas, que resuelve la regla; el valor del dinero que hoy llega meses después; ni las horas de auditoría liberadas.</li>
+</ul>
+<h3>5.3 Resultado</h3>
+<table>
+<tr><th>Escenario</th><th>Ahorro bruto</th><th class="n">Ahorro/mes</th><th class="n">Costo/mes</th><th class="n">Neto/mes</th><th class="n">% de la pérdida total</th><th class="n">Recuperación</th></tr>
+<tr><td>Base</td><td class="calc">COP 540,0 millones × 60 % × 70 %</td><td class="n">COP 226,8 millones</td><td class="n">COP 12,1 millones</td><td class="n">COP 214,7 millones</td><td class="n">31,5 %</td><td class="n">0,5 meses</td></tr>
+<tr><td><b>Pesimista</b></td><td class="calc">COP 540,0 millones × 30 % × 70 %</td><td class="n">COP 113,4 millones</td><td class="n">COP 12,1 millones</td><td class="n">COP 101,3 millones</td><td class="n">15,8 %</td><td class="n">1,1 meses</td></tr>
+</table>
+<p>Recuperación = inversión inicial / ahorro neto mensual. Incluso en el escenario pesimista, la pérdida definitiva baja solo un 15,8 %; nunca se promete eliminar las glosas. <b>Punto de equilibrio:</b> la plataforma cubre su costo mensual si la IA detecta al menos el 3,2 % de los errores atacables (costo / (atacable × 70 %)). La conclusión no depende de que el modelo sea excelente, sino de que los auditores revisen primero lo que tiene riesgo. Es exactamente lo que pidió la gerente.</p>
+<p class="nota">Riesgos para el ROI: puesta en marcha de 2–3 meses con detección menor (no modelado; el pesimista lo cubre); que el 45/30 % esté medido en número de facturas y no en pesos (O3); y que la muestra de control revele una tasa de falsos negativos mayor que la supuesta.</p>
+
+<!-- ===================================================== -->
+<h2 class="salto">Capítulo 6 — Prototipo contra la API de la clínica</h2>
+<p><b>Equipo registrado:</b> <code>visbal-glosas</code> (equipo_id 7, registrado una sola vez el 16-nov-2026 con <code>POST /api/clinica/equipos</code>). El token se guarda fuera del repositorio y no aparece en el código ni en las capturas. <b>Repositorio público con el código:</b> <a href="https://github.com/camilovisbal/proyecto-corte3-ia-glosas">https://github.com/camilovisbal/proyecto-corte3-ia-glosas</a> (el prototipo está en la carpeta <code>prototipo/</code>; el README explica cómo correrlo).</p>
+<h3>6.1 Qué hace (mismo flujo del Cap. 1)</h3>
+<table>
+<tr><th>Etapa</th><th>Implementación en el prototipo</th><th class="n">Historias</th></tr>
+<tr><td>Descarga</td><td><code>descargar.py</code>: lista paginada, detalle, imagen de las escaneadas y <code>GET /tarifas</code>.</td><td class="n">300</td></tr>
+<tr><td>1. OCR</td><td><code>ocr.py</code>: RapidOCR (PP-OCR sobre ONNX Runtime, solo CPU). Confianza media 0,949, 143 s por imagen.</td><td class="n">60</td></tr>
+<tr><td>2a. Regla de contrato</td><td>Valor facturado vs. tarifa de la EPS para el procedimiento.</td><td class="n">300</td></tr>
+<tr><td>2b. Modelo pequeño</td><td>Modelo local en CPU: perfil TF-IDF del cuadro clínico por código CIE-10 (centroides aprendidos de la propia muestra, sin etiquetas), lectura de la sección de diagnóstico tolerante al OCR y detector de soportes negados. Devuelve bajo / revisar / dudosa.</td><td class="n">292</td></tr>
+<tr><td>3. LLM</td><td>Qwen3.8-27B (Groq, nivel gratuito, temperatura 0, sin razonamiento extendido) para las dudosas y para las hospitalizaciones que el modelo pequeño marcó «revisar»; recibe solo las secciones relevantes y devuelve decisión, causa y motivo citado.</td><td class="n">5</td></tr>
+<tr><td>Envío</td><td><code>enviar.py</code>: las 300 predicciones juntas con los tokens reales; registra cada envío en <code>envios.log</code>.</td><td class="n">300</td></tr>
+</table>
+<p><b>Diferencia declarada con el diseño:</b> en producción el modelo pequeño es Qwen3-14B en GPU. El prototipo corre en un portátil sin GPU, así que esa etapa se reemplazó por un modelo pequeño estadístico local que cumple el mismo contrato de entrada y salida. Los tokens de esa etapa se declaran como los que Qwen3-14B leería: el texto completo de cada historia, contado con su tokenizador.</p>
+
+<h3>6.2 Mejor resultado</h3>
+<table>
+<tr><th>Campo</th><th>Valor</th></tr>
+<tr><td>Código de verificación</td><td><b>CLX-23-86D9-ABE4</b></td></tr>
+<tr><td>envio_id</td><td>23</td></tr>
+<tr><td>recibido_en</td><td>2026-11-16T21:50:12.851077+00:00</td></tr>
+<tr><td>Precisión / recall / F1 de «revisar»</td><td>1.0 / 1.0 / <b>1.0</b></td></tr>
+<tr><td>Tokens declarados (entrada / salida)</td><td>1.283.405 / 3.695</td></tr>
+<tr><td>Historias marcadas «revisar»</td><td>30 de 300</td></tr>
+</table>
+<figure>
+  <img src="../capturas/15-respuesta-envio-8.png" alt="Respuesta de la API">
+  <figcaption>Figura 3. Respuesta de <code>POST /api/clinica/priorizacion</code> del mejor envío (token oculto).</figcaption>
+</figure>
+<h3>6.3 Historial de envíos</h3>
+<p class='nota'>«#» es el número de intento en <code>envios.log</code>. Los intentos con HTTP 422 fueron rechazados por formato antes de calificarse y no cuentan para el límite diario: la propia API informó 4 envíos calificados ese día.</p><table><tr><th>#</th><th>envio_id</th><th>recibido_en</th><th>código</th><th>P</th><th>R</th><th>F1</th><th>revisar</th><th>cambio respecto al anterior</th></tr><tr><td class='n'>1</td><td>—</td><td>—</td><td>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>31</td><td>Rechazado por formato (HTTP 422), no calificado: «predicciones[0].id» debe ser un entero.</td></tr><tr><td class='n'>2</td><td>—</td><td>—</td><td>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>31</td><td>Rechazado por formato (HTTP 422), no calificado: «riesgo» debe ser uno de: bajo, revisar.</td></tr><tr><td class='n'>3</td><td>—</td><td>—</td><td>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>31</td><td>Rechazado por formato (HTTP 422), no calificado: «causa» no es una causa válida.</td></tr><tr><td class='n'>4</td><td>—</td><td>—</td><td>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>—</td><td class='n'>31</td><td>Rechazado por formato (HTTP 422), no calificado: «causa» no es una causa válida.</td></tr><tr><td class='n'>5</td><td>20</td><td>—</td><td>—</td><td class='n'>0.0</td><td class='n'>0.0</td><td class='n'>0.0</td><td class='n'>0</td><td>Prueba de validación enviada por error: 300 «bajo», tokens -1 (no es un envío del prototipo)</td></tr><tr><td class='n'>6</td><td>21</td><td>2026-11-16T20:19:35.371911+00:00</td><td>CLX-21-740F-5277</td><td class='n'>0.8387</td><td class='n'>0.8667</td><td class='n'>0.8525</td><td class='n'>31</td><td>Calibración: 33/60 escaneadas con OCR; las 27 sin OCR como «bajo»; ilegibles → revisar (conservador)</td></tr><tr><td class='n'>7</td><td>22</td><td>2026-11-16T21:49:08.667779+00:00</td><td>CLX-22-A9B0-9043</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>30</td><td>Final: 60/60 escaneadas con OCR + segunda pasada (franja en dos mitades) + corrección I10/110; tokens declarados por modelo</td></tr><tr><td class='n'>8</td><td>23</td><td>2026-11-16T21:50:12.851077+00:00</td><td>CLX-23-86D9-ABE4</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>1.0</td><td class='n'>30</td><td>Mismas predicciones del envío anterior; tokens y modelo declarados en cada predicción</td></tr></table>
+
+<h3>6.4 Tokens reales vs. estimados en el Capítulo 2</h3>
+<p>Antes de tener la muestra, el Cap. 2 se iba a estimar con la tasa del corpus paralelo (1,832 tokens/palabra). Las historias reales de la API, medidas con el mismo tokenizador (Qwen3-14B), salen más caras:</p><table><tr><th>Tipo</th><th class='n'>Palabras prom. (API)</th><th class='n'>Tokens prom. reales</th><th class='n'>Real escalado a palabras del caso</th><th class='n'>Estimado inicial (×1,832)</th><th class='n'>Diferencia</th></tr><tr><td>corta</td><td class='n'>1.535</td><td class='n'>3.046</td><td class='n'>2.978</td><td class='n'>2.748</td><td class='n'>8,4 %</td></tr><tr><td>hospitalizacion</td><td class='n'>5.037</td><td class='n'>9.571</td><td class='n'>28.502</td><td class='n'>27.480</td><td class='n'>3,7 %</td></tr></table><p>Por eso el Cap. 2 usa la tasa real (1,985 y 1,900) y no la del corpus: con la inicial, el volumen mensual habría quedado subestimado en ≈5 %.</p><table><tr><th>Llamada</th><th class='n'>Supuesto Cap. 2</th><th class='n'>Real en el prototipo</th><th>Por qué difiere</th></tr><tr><td>Modelo pequeño, entrada por historia</td><td class='n'>texto + 600</td><td class='n'>texto completo (4.385 prom.)</td><td>El prototipo no usa instrucciones (es un modelo estadístico local); en producción Qwen3-14B sí las necesita.</td></tr><tr><td>LLM, entrada por llamada</td><td class='n'>texto completo + 900</td><td class='n'>589</td><td>El prototipo solo envía las secciones relevantes; en producción el LLM lee la historia completa para citar evidencia de cualquier parte.</td></tr><tr><td>LLM, salida por llamada</td><td class='n'>350</td><td class='n'>38</td><td>Respuesta en JSON corto. 350 es un supuesto conservador que deja espacio para citar varios fragmentos.</td></tr></table><p>Total declarado en el mejor envío: 1.283.405 tokens de entrada y 3.695 de salida para 300 historias. Las hospitalizaciones de la API tienen un tercio de las palabras del caso, así que este total no se extrapola directo: el Cap. 2 parte de las palabras del caso.</p>
+
+<h3>6.5 Errores del prototipo</h3>
+<p>El envío de calibración (envio_id 21, F1 0,8525) dejó 5 falsos positivos y 4 falsos negativos. Cada uno se rastreó hasta su causa antes de cambiar nada. Como la API no dice cuáles historias fallaron, el diagnóstico se hizo leyendo la evidencia que el prototipo guarda de cada historia (<code>salidas/detalle.json</code>).</p>
+<table>
+<tr><th>Tipo de error</th><th>Qué pasó</th><th>Efecto</th><th>Corrección y resultado</th></tr>
+<tr><td><b>1. OCR en líneas largas</b> (falso positivo)</td><td>La imagen estaba limpia, pero el reconocedor comprimía las líneas anchas, como «Se realizó monitoría fetal con orden médica, nota y resultado anexos al expediente.», y devolvía basura («seede e saee oes…»). Sin una línea de soporte legible, la historia quedaba dudosa, y el LLM, ante una sección vacía, decía «revisar».</td><td>5 falsos positivos (historias 53, 91, 102, 142 y 144).</td><td>Segunda pasada: se relee solo la franja superior de la página, partida en dos mitades con traslape, y se reúnen las líneas por altura. Recuperó 13 de las 16 escaneadas con una línea clave ilegible, en ≈1 minuto cada una.</td></tr>
+<tr><td><b>2. Letra leída como cifra en el CIE-10</b> (riesgo de alerta falsa de «código»)</td><td>El OCR leyó «I10» como «110». Sin la letra, el lector no encontraba ningún código en la línea de diagnóstico.</td><td>La historia quedaba sin código que comparar y dependía solo del cuadro clínico (historia 247).</td><td>Lectura de respaldo: si la línea de diagnóstico no trae código, un número de 3 cifras recibe la letra más probable (1→I, 0→O, 5→S, 8→B). En producción, además, el código leído se valida contra el catálogo oficial CIE-10 (Cap. 1).</td></tr>
+<tr><td><b>3. Clasificar antes de terminar el OCR</b> (falso negativo)</td><td>El envío de calibración salió con 27 escaneadas aún sin leer, marcadas «bajo» de forma provisional.</td><td>4 falsos negativos: las glosas reales que había entre esas escaneadas.</td><td>El flujo del Cap. 1 ya lo impide: ninguna historia se clasifica hasta que su OCR termina. En producción, las escaneadas con confianza baja van directo al auditor.</td></tr>
+</table>
+<p>Con las tres correcciones, los envíos 22 y 23 obtuvieron precisión, recall y F1 de 1,0, con la causa correcta en las 30 glosas (<code>acierto_causa</code> 1,0) y una tasa de revisión humana del 10 %.</p>
+<p><b>Por qué un 1,0 no significa que el problema esté resuelto.</b></p>
+<ul>
+  <li>La muestra es sintética y sigue una plantilla fija: las mismas redacciones se repiten para soporte completo, soporte faltante y diagnóstico descartado. Un modelo pequeño basado en reglas funciona aquí, pero fallaría con historias reales escritas libremente. Por eso producción usa Qwen3-14B y el ROI supone una detección del 60 %, no del 100 %.</li>
+  <li>En 2 escaneadas (192 y 269) la línea de diagnóstico no salió legible ni en la segunda pasada. Se clasificaron solo por la similitud del cuadro clínico, y acertaron tanto por suerte como por método.</li>
+  <li>La regla de tarifas detectó tanto sobrefacturación como subfacturación (las historias 123 y 155 se facturaron por debajo del contrato), y la API contó ambas como glosa: una diferencia con el contrato se revisa en cualquier dirección.</li>
+</ul>
+<p><b>Conteo de tokens del prototipo.</b> La etapa pequeña declara, para cada historia, los tokens de su texto completo contados con el tokenizador de Qwen3-14B, que es lo que ese modelo leería en producción. Las 8 historias que resolvió la regla de contrato declaran 0 tokens. El LLM declara los tokens reales que informó Groq en sus 5 llamadas (cita de evidencia en las hospitalizaciones en riesgo). La API los devolvió sumados y con la lista de modelos usados.</p>
+
+
+<!-- ===================================================== -->
+<h2 class="salto">Tabla consolidada de cálculos (Cap. 2, 3 y 5)</h2>
+<table>
+<tr><th>Variable</th><th class="n">Valor</th><th>Origen</th></tr>
+<tr><td>Tokens/palabra (corta / hospitalización)</td><td class="n">1,985 / 1,900 (14B) · 1,811 / 1,723 (27B)</td><td>Medido con el tokenizador de cada modelo, historias de la API</td></tr>
+<tr><td>Impuesto del español</td><td class="n">×1,41 (14B) · ×1,23 (27B)</td><td>Medido, corpus paralelo</td></tr>
+<tr><td>Entrada / salida al mes</td><td class="n">154,96 M / 1,95 M</td><td>Cap. 2.2</td></tr>
+<tr><td>Entrada / salida en el día promedio</td><td class="n">5,17 M / 0,07 M</td><td>Cap. 2.3</td></tr>
+<tr><td>Entrada / salida en el día pico</td><td class="n">18,59 M / 0,23 M</td><td>Cap. 2.3 (dimensiona)</td></tr>
+<tr><td>Memoria: pesos INT4 de los dos modelos</td><td class="n">23,4 GB</td><td>Cap. 3.1</td></tr>
+<tr><td>Contexto de una hospitalización en el LLM (FP16 / FP8)</td><td class="n">1,93 / 1,04 GB</td><td>Cap. 3.1</td></tr>
+<tr><td>Horas de GPU en el día pico</td><td class="n">1,4</td><td>Cap. 3.1 (supuesto: 35 % de utilización)</td></tr>
+<tr><td>Costo API (Qwen / Bedrock)</td><td class="n">COP 71.020 / COP 242.306</td><td>Cap. 2.4</td></tr>
+<tr><td>Costo de la plataforma elegida</td><td class="n">COP 12,1 millones</td><td>Cap. 2.4 (usado en el Cap. 5)</td></tr>
+<tr><td>Inversión inicial</td><td class="n">COP 112,1 millones</td><td>Cap. 5.2</td></tr>
+<tr><td>Pérdida atacable</td><td class="n">COP 540,0 millones</td><td>Cap. 5.1</td></tr>
+<tr><td>Ahorro neto base / pesimista</td><td class="n">COP 214,7 millones / COP 101,3 millones</td><td>Cap. 5.3</td></tr>
+<tr><td>Recuperación base / pesimista</td><td class="n">0,5 / 1,1 meses</td><td>Cap. 5.3</td></tr>
+</table>
+<p class="nota">Todo se recalcula con <code>python calculos.py</code> (genera <code>calculos.json</code>); este informe toma de ahí cada cifra para que los capítulos 2, 3 y 5 no se contradigan.</p>
+
+<h2>Fuentes (con fecha de consulta)</h2>
+<ul class="nota">
+  <li>Enunciado del proyecto y datos del caso: asur-col.github.io/cuc-arquitectura-nube/proyectos/proyecto-aula-corte3.html (16-nov-2026).</li>
+  <li>API de la clínica: labs.proyectoasur.org/api/clinica/docs y /openapi.json (16-nov-2026).</li>
+  <li>Material del curso S14–S16 (repositorio asur-col/cuc-arquitectura-nube, docs/cifras-S14/S15/S16): precios de Bedrock Claude Haiku 5.5 (0,10/0,50 USD por millón) y Sonnet 5.5 (2,00/10,00), consulta del material 05-nov-2026; AWQ (Lin et al., MLSys 2024); bytes por parámetro.</li>
+  <li>Tokenizador y config.json de Qwen3-14B y Qwen3.8-27B (licencia Apache-2.0, 27,8 B parámetros): huggingface.co/Qwen (16-nov-2026).</li>
+  <li>Precios de OpenRouter para qwen/qwen3-14b (0,12/0,24) y qwen/qwen3.8-27b (0,15/1,875) USD por millón: openrouter.ai/api/v1/models (16-nov-2026).</li>
+  <li>AWS g6e.xlarge on-demand en us-east-1, 1,861 USD/h: compute.doit.com/spot/us-east-1/g6e.xlarge y calculator.holori.com (16-nov-2026). Agregadores; verificar en aws.amazon.com/ec2/pricing/on-demand.</li>
+  <li>NVIDIA L40S 48 GB, USD 6.799 nueva en Amazon EE. UU. (actualizado 16-nov-2026): gpudojo.com/l40s (16-nov-2026; captura 04). 362 TFLOPS FP16 densos: hoja de datos NVIDIA L40S.</li>
+  <li>TRM COP 3.297,07 del 11-nov-2026: dolar-colombia.com/2026-11-11 (16-nov-2026); se usa 3.300.</li>
+  <li>Zona local de AWS en Bogotá anunciada, sin confirmación de disponibilidad: aws.amazon.com/blogs/publicsector/aws-announces-local-zones-latin-america y bloomberglinea.com (16-nov-2026).</li>
+  <li>SIC, Circular Externa 005 de 2017 (países con nivel adecuado, incluye EE. UU.): bu.com.co y hklaw.com (16-nov-2026).</li>
+  <li>SIC, Circular Externa 002 del 21-ago-2024 (datos personales en sistemas de IA): sedeelectronica.sic.gov.co (16-nov-2026).</li>
+  <li>Ley 1581 de 2012; Decreto 1074 de 2015 (compila el 1377 de 2013 y el 886 de 2014); Resolución 1995 de 1999 y Resolución 839 de 2017 del Ministerio de Salud.</li>
+  <li>Groq: modelo qwen/qwen3.8-27b disponible en el nivel gratuito (lista de modelos de la API consultada el 16-nov-2026; qwen/qwen3-32b ya no se ofrece).</li>
+</ul>
+
+<h2>Declaración de uso de IA</h2>
+<p>Usé un asistente de IA (Claude, de Anthropic, en la aplicación de escritorio) como apoyo en cuatro frentes: (1) leer el enunciado, la documentación de la API y el material del curso, y organizar la rúbrica en una lista de verificación; (2) escribir el código del prototipo (descarga, OCR, clasificador, envío) y los scripts de cálculo y de medición de tokens; (3) dibujar los diagramas en SVG a partir de los componentes, zonas y conexiones del diseño; (4) redactar borradores de los capítulos. Los números no salen del asistente: se calculan con scripts incluidos en la carpeta (<code>calculos.py</code>, <code>medir_tokens.py</code>), a partir de los datos de la sección 2, de mediciones sobre la muestra de la API con los tokenizadores oficiales de Qwen3 y Qwen3.8 y de fuentes con fecha de consulta. Las métricas del Capítulo 6 son las que devolvió la API y se pueden verificar con el código de verificación. Revisé cada observación del Capítulo 0 contra los datos del caso, los cálculos contra sus fórmulas, los diagramas contra el diseño y los supuestos explícitos de cada capítulo, y respondo por el contenido técnico del documento.
+</p>
+
+</body>
+</html>

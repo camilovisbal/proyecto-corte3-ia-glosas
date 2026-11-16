@@ -1,0 +1,11 @@
+{
+  "equipo_id": 7,
+  "nombre": "visbal-glosas",
+  "integrantes": [
+    "Camilo Andrés Visbal Beltrán"
+  ],
+  "token": "<oculto, longitud 43>",
+  "limite_equipos": 60,
+  "aviso": "guarda el token: no se puede recuperar; la API no lo vuelve a mostrar.",
+  "creado_en": "2026-11-16T18:36:01.367640+00:00"
+}

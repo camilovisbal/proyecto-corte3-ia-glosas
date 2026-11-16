@@ -1,0 +1,36 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;background:#fff;color:#111}
+.t{font-size:18px;font-weight:600;margin-bottom:6px} .s{color:#444;font-size:14px;margin-bottom:14px}
+pre{background:#f4f4f4;border:1px solid #ccc;padding:16px;font-size:15px;line-height:1.45;white-space:pre-wrap}
+</style></head><body>
+<div class="t">POST https://labs.proyectoasur.org/api/clinica/priorizacion → respuesta del envío 7</div>
+<div class="s">Equipo: visbal-glosas (equipo_id 7) · 300 predicciones · Authorization: Bearer &lt;oculto&gt;</div>
+<pre>{
+  &quot;ok&quot;: true,
+  &quot;envio_id&quot;: 22,
+  &quot;equipo&quot;: &quot;visbal-glosas&quot;,
+  &quot;metrica&quot;: {
+    &quot;historias_evaluadas&quot;: 300,
+    &quot;precision_revisar&quot;: 1.0,
+    &quot;recall_revisar&quot;: 1.0,
+    &quot;f1_revisar&quot;: 1.0,
+    &quot;matriz_confusion&quot;: {
+      &quot;verdaderos_positivos&quot;: 30,
+      &quot;falsos_positivos&quot;: 0,
+      &quot;falsos_negativos&quot;: 0,
+      &quot;verdaderos_negativos&quot;: 270
+    },
+    &quot;acierto_causa&quot;: 1.0,
+    &quot;glosas_evaluadas&quot;: 30,
+    &quot;tasa_revision_humana&quot;: 0.1,
+    &quot;tokens_entrada&quot;: 0,
+    &quot;tokens_salida&quot;: 0,
+    &quot;tokens_totales&quot;: 0,
+    &quot;modelos&quot;: []
+  },
+  &quot;codigo_verificacion&quot;: &quot;CLX-22-A9B0-9043&quot;,
+  &quot;envios_hoy&quot;: 3,
+  &quot;limite_diario&quot;: 20,
+  &quot;recibido_en&quot;: &quot;2026-11-16T21:49:08.667779+00:00&quot;,
+  &quot;nota&quot;: &quot;La API no revela qué historias fallaron; revisa tus métricas y vuelve a intentar.&quot;
+}</pre></body></html>

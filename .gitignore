@@ -1,0 +1,5 @@
+prototipo/datos/
+__pycache__/
+*.pyc
+tokenizador/*-tokenizer.json
+informe/*.zip

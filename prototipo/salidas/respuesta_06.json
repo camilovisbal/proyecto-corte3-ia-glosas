@@ -1,0 +1,29 @@
+{
+  "ok": true,
+  "envio_id": 21,
+  "equipo": "visbal-glosas",
+  "metrica": {
+    "historias_evaluadas": 300,
+    "precision_revisar": 0.8387,
+    "recall_revisar": 0.8667,
+    "f1_revisar": 0.8525,
+    "matriz_confusion": {
+      "verdaderos_positivos": 26,
+      "falsos_positivos": 5,
+      "falsos_negativos": 4,
+      "verdaderos_negativos": 265
+    },
+    "acierto_causa": 0.8667,
+    "glosas_evaluadas": 30,
+    "tasa_revision_humana": 0.1033,
+    "tokens_entrada": 0,
+    "tokens_salida": 0,
+    "tokens_totales": 0,
+    "modelos": []
+  },
+  "codigo_verificacion": "CLX-21-740F-5277",
+  "envios_hoy": 2,
+  "limite_diario": 20,
+  "recibido_en": "2026-11-16T20:19:35.371911+00:00",
+  "nota": "La API no revela qué historias fallaron; revisa tus métricas y vuelve a intentar."
+}

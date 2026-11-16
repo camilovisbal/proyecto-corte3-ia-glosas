@@ -1,0 +1,4864 @@
+[
+ {
+  "historia_id": 1,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2899,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 2,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2921,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 3,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 4,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 5,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 6,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3040,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 7,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 8,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 9,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3017,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "soporte: se indica electrocardiograma; al cierre de la historia no se anexa resultado ni autorizacion."
+  ]
+ },
+ {
+  "historia_id": 10,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2992,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 11,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 12,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9584,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 13,
+  "tipo": "corta",
+  "escaneada": true,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 208600 vs contrato 185000"
+  ]
+ },
+ {
+  "historia_id": 14,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3079,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 15,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9683,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 16,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 17,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3039,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 18,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2913,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 19,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3060,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 20,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9693,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 21,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2803,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 22,
+  "tipo": "corta",
+  "escaneada": false,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 261700 vs contrato 207200"
+  ]
+ },
+ {
+  "historia_id": 23,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9432,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 24,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3072,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 25,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2997,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 26,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3022,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 27,
+  "tipo": "corta",
+  "escaneada": false,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 209200 vs contrato 259200"
+  ]
+ },
+ {
+  "historia_id": 28,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9527,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 29,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 30,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3057,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 31,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9626,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 32,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2958,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 33,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2912,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 34,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2985,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 35,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9425,
+   "pequeno_out": 12,
+   "llm_in": 568,
+   "llm_out": 42
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno+llm_cita",
+  "evidencia": [
+   "soporte: para electrocardiograma no se encuentra soporte documental en la historia, aunque el cargo fue incluido."
+  ],
+  "llm": {
+   "decision": "revisar",
+   "causa": "soporte",
+   "motivo": "El electrocardiograma facturado carece de soporte documental en la historia clínica, requiriendo verificación humana.",
+   "tokens_in": 568,
+   "tokens_out": 42
+  }
+ },
+ {
+  "historia_id": 36,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3027,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 37,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3026,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 38,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9434,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 39,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3034,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 40,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2910,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 41,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3030,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 42,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3002,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 43,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "soporte: queda constancia de ecografia abdominal en la facturacion; el expediente no registra la nota respectiva."
+  ]
+ },
+ {
+  "historia_id": 44,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 45,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['J18.9'] y se facturo J44.1",
+   "cuadro clinico se parece mas a J18.9 (0.89) que a J44.1 (0.26)"
+  ]
+ },
+ {
+  "historia_id": 46,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 47,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 48,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3073,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 49,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2915,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 50,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 51,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 52,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 53,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2931,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 54,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2985,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 55,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3145,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 56,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3112,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 57,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 58,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 59,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3111,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 60,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9563,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 61,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3035,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 62,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9465,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 63,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 64,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2887,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 65,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 66,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2916,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 67,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2961,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 68,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2965,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 69,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2905,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 70,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3843,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 71,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9404,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 72,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3039,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 73,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3007,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 74,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3043,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 75,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2871,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 76,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2986,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 77,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 78,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2957,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 79,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 80,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 81,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2996,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 82,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 83,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2891,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 84,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3051,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 85,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 86,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2833,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 87,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3002,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 88,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2884,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 89,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3111,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 90,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2980,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 91,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2917,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 92,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2977,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 93,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3043,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 94,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9327,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 95,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9484,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 96,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9700,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 97,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2987,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 98,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3032,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "cuadro clinico se parece mas a R07.9 (1.00) que a A09 (0.16)"
+  ]
+ },
+ {
+  "historia_id": 99,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3130,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 100,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 101,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['E11.9'] y se facturo J44.1",
+   "cuadro clinico se parece mas a E11.9 (1.00) que a J44.1 (0.15)"
+  ]
+ },
+ {
+  "historia_id": 102,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3819,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 103,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9524,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 104,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3078,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 105,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 106,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 107,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2944,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 108,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2934,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 109,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9551,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 110,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3034,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 111,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2845,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 112,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 113,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3085,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 114,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 115,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 116,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9746,
+   "pequeno_out": 12,
+   "llm_in": 609,
+   "llm_out": 36
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno+llm_cita",
+  "evidencia": [
+   "soporte: se practico electrocardiograma sin que el expediente documente la orden o el informe."
+  ],
+  "llm": {
+   "decision": "revisar",
+   "causa": "soporte",
+   "motivo": "Electrocardiograma facturado sin orden ni informe documentado en el expediente clínico.",
+   "tokens_in": 609,
+   "tokens_out": 36
+  }
+ },
+ {
+  "historia_id": 117,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3078,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "soporte: el procedimiento valoracion por ortopedia aparece facturado sin nota del procedimiento, orden ni resultado en el expedie"
+  ]
+ },
+ {
+  "historia_id": 118,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3047,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 119,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2994,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 120,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9521,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 121,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3129,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 122,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 123,
+  "tipo": "corta",
+  "escaneada": true,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 144100 vs contrato 199800"
+  ]
+ },
+ {
+  "historia_id": 124,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3006,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 125,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9446,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 126,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3059,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 127,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2947,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 128,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 129,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3071,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 130,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2931,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 131,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2964,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 132,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3028,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 133,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2947,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 134,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9552,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 135,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 136,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3025,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 137,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3086,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 138,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2972,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 139,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 140,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9662,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 141,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9588,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 142,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3733,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 143,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3057,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 144,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2987,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 145,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3017,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 146,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2866,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 147,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 148,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 149,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2996,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 150,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3041,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 151,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 152,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9735,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 153,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3018,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 154,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3046,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 155,
+  "tipo": "corta",
+  "escaneada": true,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 159400 vs contrato 181300"
+  ]
+ },
+ {
+  "historia_id": 156,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3027,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 157,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9577,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 158,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2961,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 159,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 160,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9527,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 161,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9460,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 162,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3079,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 163,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3015,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 164,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2973,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 165,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2899,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 166,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 167,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3007,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 168,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9582,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 169,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3035,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 170,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3031,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 171,
+  "tipo": "corta",
+  "escaneada": false,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 228200 vs contrato 199800"
+  ]
+ },
+ {
+  "historia_id": 172,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2886,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 173,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3835,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 174,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3037,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 175,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2978,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 176,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9784,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 177,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3873,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 178,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9525,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 179,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9430,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 180,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9592,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 181,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3066,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 182,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3107,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 183,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 184,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3134,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 185,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 186,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2926,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 187,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 188,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9795,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 189,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2991,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 190,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3013,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 191,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9372,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 192,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2945,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 0.85,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico sin codigo legible"
+  ]
+ },
+ {
+  "historia_id": 193,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico cita ['N39.0'] y se facturo S72.001",
+   "cuadro clinico se parece mas a N39.0 (1.00) que a S72.001 (0.17)"
+  ]
+ },
+ {
+  "historia_id": 194,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3056,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 195,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9615,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 196,
+  "tipo": "corta",
+  "escaneada": false,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 277900 vs contrato 207200"
+  ]
+ },
+ {
+  "historia_id": 197,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9549,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 198,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3795,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 199,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 200,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3045,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 201,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9572,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 202,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3058,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['A09'] y se facturo G40.9",
+   "cuadro clinico se parece mas a A09 (1.00) que a G40.9 (0.15)"
+  ]
+ },
+ {
+  "historia_id": 203,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3038,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 204,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 205,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2880,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 206,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3061,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 207,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "cuadro clinico se parece mas a G40.9 (0.99) que a A09 (0.16)"
+  ]
+ },
+ {
+  "historia_id": 208,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3024,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 209,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 210,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3115,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 211,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 212,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9891,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 213,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3021,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 214,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3042,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 215,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3090,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['N39.0'] y se facturo S72.001",
+   "cuadro clinico se parece mas a N39.0 (1.00) que a S72.001 (0.17)"
+  ]
+ },
+ {
+  "historia_id": 216,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2994,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 217,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9682,
+   "pequeno_out": 12,
+   "llm_in": 585,
+   "llm_out": 39
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno+llm_cita",
+  "evidencia": [
+   "soporte: el procedimiento tomografia de craneo simple aparece facturado sin nota del procedimiento, orden ni resultado en el expe"
+  ],
+  "llm": {
+   "decision": "revisar",
+   "causa": "soporte",
+   "motivo": "La tomografía de cráneo simple fue facturada sin orden, nota o resultado en el expediente clínico.",
+   "tokens_in": 585,
+   "tokens_out": 39
+  }
+ },
+ {
+  "historia_id": 218,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2964,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['G40.9'] y se facturo J44.1",
+   "cuadro clinico se parece mas a G40.9 (0.70) que a J44.1 (0.09)"
+  ]
+ },
+ {
+  "historia_id": 219,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3028,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 220,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9597,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 221,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3100,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 222,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3067,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 223,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3055,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 224,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9740,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 225,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3051,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 226,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 227,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3024,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 228,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9472,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 229,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9583,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 230,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3118,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 231,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9612,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 232,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2993,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 233,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 234,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3019,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 235,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2999,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 236,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9915,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 237,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3094,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 238,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "cuadro clinico se parece mas a J44.1 (1.00) que a K92.1 (0.15)"
+  ]
+ },
+ {
+  "historia_id": 239,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3100,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 240,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2989,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 241,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3070,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 242,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3047,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 243,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3104,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 244,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3052,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 245,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2933,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 246,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3089,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 247,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2884,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 248,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2954,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 249,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 250,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3060,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 251,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9413,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 252,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9574,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 253,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico cita ['K92.1'] y se facturo J44.1",
+   "cuadro clinico se parece mas a K92.1 (0.71) que a J44.1 (0.09)"
+  ]
+ },
+ {
+  "historia_id": 254,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3013,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 255,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2900,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 256,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2859,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 257,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3083,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 258,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3097,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 259,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9451,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 260,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3053,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "soporte: se indica monitoria fetal; al cierre de la historia no se anexa resultado ni autorizacion."
+  ]
+ },
+ {
+  "historia_id": 261,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 262,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3049,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 263,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9480,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 264,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9617,
+   "pequeno_out": 12,
+   "llm_in": 606,
+   "llm_out": 42
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno+llm_cita",
+  "evidencia": [
+   "soporte: se indica electrocardiograma; al cierre de la historia no se anexa resultado ni autorizacion."
+  ],
+  "llm": {
+   "decision": "revisar",
+   "causa": "soporte",
+   "motivo": "El electrocardiograma indicado no tiene resultado ni autorización anexa en el expediente, faltando soporte para el procedimiento.",
+   "tokens_in": 606,
+   "tokens_out": 42
+  }
+ },
+ {
+  "historia_id": 265,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9544,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 266,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3081,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 267,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2907,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 268,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3065,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 269,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2877,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 0.85,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico sin codigo legible"
+  ]
+ },
+ {
+  "historia_id": 270,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3064,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 271,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2940,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 272,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2862,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 273,
+  "tipo": "corta",
+  "escaneada": false,
+  "decision": "revisar",
+  "causa": "tarifa",
+  "etapa": "regla_contrato",
+  "evidencia": [
+   "facturado 235600 vs contrato 199800"
+  ]
+ },
+ {
+  "historia_id": 274,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 2993,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 275,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3077,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 276,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3088,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 277,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9632,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 278,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3789,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 279,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9631,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 280,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3050,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 281,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3026,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 282,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3036,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 283,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9515,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 284,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3048,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "cuadro clinico se parece mas a G40.9 (0.99) que a N39.0 (0.11)"
+  ]
+ },
+ {
+  "historia_id": 285,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2835,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 286,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2902,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico: lenguaje de descarte/cambio",
+   "diagnostico cita ['K92.1'] y se facturo J18.9",
+   "cuadro clinico se parece mas a K92.1 (0.79) que a J18.9 (0.10)"
+  ]
+ },
+ {
+  "historia_id": 287,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2930,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 288,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9478,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 289,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9572,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 290,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9304,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 291,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9705,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 292,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3062,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 293,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9507,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 294,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9789,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 295,
+  "tipo": "hospitalizacion",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 9531,
+   "pequeno_out": 12,
+   "llm_in": 579,
+   "llm_out": 32
+  },
+  "decision": "revisar",
+  "causa": "soporte",
+  "confianza": 0.95,
+  "etapa": "modelo_pequeno+llm_cita",
+  "evidencia": [
+   "soporte: se indica ecografia abdominal; al cierre de la historia no se anexa resultado ni autorizacion."
+  ],
+  "llm": {
+   "decision": "revisar",
+   "causa": "soporte",
+   "motivo": "Ecografía abdominal indicada sin resultado ni autorización anexa en el expediente.",
+   "tokens_in": 579,
+   "tokens_out": 32
+  }
+ },
+ {
+  "historia_id": 296,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 2937,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "revisar",
+  "causa": "codigo",
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": [
+   "diagnostico cita ['R07.9'] y se facturo S72.001",
+   "cuadro clinico se parece mas a R07.9 (0.74) que a S72.001 (0.10)"
+  ]
+ },
+ {
+  "historia_id": 297,
+  "tipo": "corta",
+  "escaneada": true,
+  "tokens": {
+   "pequeno_in": 3707,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 298,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3080,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 299,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ },
+ {
+  "historia_id": 300,
+  "tipo": "corta",
+  "escaneada": false,
+  "tokens": {
+   "pequeno_in": 3012,
+   "pequeno_out": 12,
+   "llm_in": 0,
+   "llm_out": 0
+  },
+  "decision": "bajo",
+  "causa": null,
+  "confianza": 1.0,
+  "etapa": "modelo_pequeno",
+  "evidencia": []
+ }
+]
